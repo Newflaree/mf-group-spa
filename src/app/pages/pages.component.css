@@ -1,0 +1,15 @@
+.main-container {
+  padding-top: 193px;
+}
+
+@media ( max-width: 991px ) {
+}
+
+@media ( max-width: 767px ) {
+  .main-container {
+    padding-top: 70px;
+  }
+}
+
+@media ( max-width: 575px ) {
+}

@@ -1,0 +1,33 @@
+<section class='slideshow'>
+  <div class='container'>
+
+      <!-- Slider main container -->
+      <div class="swiper-container">
+
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+
+          <!-- Slides -->
+          <div class="swiper-slide"
+               *ngFor='let slide of slideImgs'
+               [ngStyle]="{
+                'background-size': 'cover',
+                'background-position': 'center',
+                'background-image': 'url( '+slide.url+' )'
+               }">
+            <h1>{{ slide.name }}</h1>
+          </div>
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+
+        <!-- If we need navigation buttons -->
+        <div (click)='onPrev()' class="swiper-button-prev"></div>
+        <div (click)='onNext()' class="swiper-button-next"></div>
+
+      </div>
+  </div>
+</section>
+

@@ -1,0 +1,30 @@
+<section class='products'>
+  <div class='container'>
+
+    <div class='row'>
+      <div class='section-title-product'>
+	      <h2>{{ product.name }}</h2>
+      </div>
+    </div>
+
+    <div class='row product-detail'>
+      <div class='col-45'>
+        <p class='img-content'>
+	        <img src='{{ product.url }}'>
+        </p>
+      </div>
+      <div class='col-55'>
+	      <div class='desc'>
+	        <p>{{ product.desc }}</p>
+	      </div>
+	      <div class='ficha-tecnica'>
+	        <h3>Especificaciones Técnicas</h3>
+	        <p *ngFor='let item of espTech'>
+	          {{ item.line }}
+	        </p>
+	      </div>
+      </div>
+    </div>
+
+  </div>
+</section>

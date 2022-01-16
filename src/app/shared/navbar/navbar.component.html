@@ -1,0 +1,136 @@
+<header>
+  <div class='container'>
+    <div class='row justify-content-between align-items-center'>
+
+      <!-- Logo -->
+      <div class='brand-name'>
+	<a routerLink="/home">
+        <img src="../../../assets/LOGO DEFINITIVO 1.png" alt="logo" height='168px' width="202px">
+	</a>
+      </div>
+      <!-- Logo -->
+
+      <!-- Navbar -->
+      <nav>
+        <ul>
+          <li class='nav-item' 
+              (click)='toHome()'
+              routerLinkActive="active">
+            <a routerLink="/home">
+              Inicio
+            </a>
+          </li>
+          <li class='nav-item' 
+              (click)='toAbout()'
+              routerLinkActive="active">
+            <a routerLink="/about">
+              Quienes Somos
+            </a>
+          </li>
+          <li class='nav-item' 
+              routerLinkActive="active">
+            <a (click)='showBox()'>
+              Productos <i class="fas fa-sort-down"></i>
+            </a>
+
+            <!-- Product Box -->
+            <div class='products-box hidden animate__animated animate__fadeIn animate__faster'>
+              <ul *ngFor='let option of productOptions'>
+                <li>
+                  <a routerLinkActive="active" 
+                     (click)='showBox()'
+                     routerLink="{{ option.routerLink }}">
+                    <h5>{{ option.nameOption }}</h5>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Product Box -->
+
+          </li>
+          <li class='nav-item' 
+              (click)='toContact()'
+              routerLinkActive="active">
+            <a routerLink="/contact">
+              Contacto
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Navbar -->
+
+    </div>
+  </div>
+</header>
+
+
+<header class='responsive-navbar hidden'>
+  <div class='container'>
+    <div class='row justify-content-between align-items-center'>
+
+      <!-- Logo -->
+      <div class='brand-name'>
+	<a routerLink="/home">
+          <img src="../../../assets/LOGO DEFINITIVO 1.png" alt="logo" height='57px' width="69px">
+	</a>
+      </div>
+      <!-- Logo -->
+
+      <!-- Toggle-Button -->
+      <button type='button' class='nav-toggler'>
+        <span></span>
+      </button>
+      <!-- Toggle-Button -->
+
+      <!-- Navbar -->
+      <nav class='hidden'>
+        <ul>
+          <li class='nav-item' 
+              (click)='toHome()'
+              routerLinkActive="active">
+            <a routerLink="/home">
+              Inicio
+            </a>
+          </li>
+          <li class='nav-item' 
+              (click)='toAbout()'
+              routerLinkActive="active">
+            <a routerLink="/about">
+              Quienes Somos
+            </a>
+          </li>
+          <li class='nav-item' 
+              routerLinkActive="active">
+            <a (click)='showBox()'>
+              Productos <i class="fas fa-sort-down"></i>
+            </a>
+
+            <!-- Product Box -->
+            <div class='products-box hidden animate__animated animate__fadeIn animate__faster'>
+              <ul *ngFor='let option of productOptions'>
+                <li>
+                  <a routerLinkActive="active" 
+                     (click)='showBox()'
+                     routerLink="{{ option.routerLink }}">
+                    <h5>{{ option.nameOption }}</h5>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Product Box -->
+
+          </li>
+          <li class='nav-item' 
+              (click)='toContact()'
+              routerLinkActive="active">
+            <a routerLink="/contact">
+              Contacto
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Navbar -->
+
+    </div>
+  </div>
+</header>
