@@ -21,6 +21,6 @@ export class PageLoaderComponent implements OnInit {
     setTimeout( () => {
       const preloader = document.querySelector( '.preloader' );
       preloader?.classList.add( 'hidden' );
-    }, 1500);
+    }, 700);
   }
 }

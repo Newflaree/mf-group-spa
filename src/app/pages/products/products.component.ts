@@ -19,11 +19,15 @@ export class ProductsComponent implements OnInit {
   ) {  }
 
   ngOnInit(): void {
+    this.onTopPage();
     const { id } =  this.activatedRoute.snapshot.params;
     const product = this.productsService.findById(id);
 
     this.product = product;
     this.espTech = product.espTech;
-    console.log( this.product.espTech );
+  }
+
+  onTopPage() {
+    window.scrollTo( 0, 0);
   }
 }

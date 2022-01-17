@@ -25,9 +25,14 @@ export class PernosComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.onTopPage();
   }
 
   onProduct( product: Product ) {
     this.router.navigate([ '/producto', product.id ])
+  }
+
+  onTopPage() {
+    window.scrollTo( 0, 0);
   }
 }

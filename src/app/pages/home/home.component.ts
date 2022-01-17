@@ -10,6 +10,10 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.onTopPage();
   }
 
+  onTopPage() {
+    window.scrollTo( 0, 0);
+  }
 }

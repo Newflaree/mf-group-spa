@@ -202,6 +202,7 @@ header .nav-toggler.active span::after {
     background-color: var( --back-color );
     box-shadow: 0 0 5px var( --bold-color );
     width: 100%;
+    transition: all 0.3s ease;
   }
 
   header nav ul li {
