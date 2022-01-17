@@ -1,15 +1,13 @@
 <footer id='contact'>
   <div class='container'>
-    <div class='row justify-content-between'>
-      <div class='social-icons' *ngFor='let item of socialItems'>
-
+    <div class='row'>
+      <div class='social-icons col-50' *ngFor='let item of socialItems'>
         <div class='social-item {{ item.position }}'>
           <h3>{{ item.name }}</h3>
           <p>{{ item.value }}</p>
           <i class='{{ item.icon }}'></i>
         </div>
-
-      </div> 
+      </div>
     </div>
   </div>
 </footer>

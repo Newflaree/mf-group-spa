@@ -5,7 +5,7 @@
     <div class='row'>
       <div class='section-title'>
         <h2>{{ title }}</h2>
-      </div> 
+      </div>
     </div>
     <!-- Product Title -->
 
@@ -14,7 +14,9 @@
       	<!-- Grid Iterm-->
       	<div class='grid-item'>
           <div class='grid-img' (click)='onProduct( item )'>
-            <img src='{{ item.url }}' alt='grid-img' width='331px' height="308px">
+            <p class='img-content'>
+              <img src='{{ item.url }}' alt='grid-img' width='331px' height="308px">
+            </p>
           </div>
           <div class='grid-info'>
             <div class='start'></div>

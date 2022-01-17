@@ -4,9 +4,9 @@
 
 @media ( max-width: 991px ) {
   .col-50 {
-    width: 100%;
     margin: 0;
     padding: 0;
+    width: 100%;
   }
 
   .grid-img img {
@@ -15,6 +15,8 @@
   }
 
   .img-content {
+    margin: 0;
+    padding: 0;
     text-align: center;
   }
 }

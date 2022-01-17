@@ -10,7 +10,6 @@ import { ComponentsModule } from '../components/components.module';
 import { PagesComponent } from './pages.component';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
-import { CategoriesComponent } from './categories/categories.component';
 import { AboutComponent } from './about/about.component';
 import { EnchufeOConectorComponent } from './enchufe-o-conector/enchufe-o-conector.component';
 import { PernosComponent } from './pernos/pernos.component';
@@ -24,7 +23,6 @@ import { PuentesOConectoresComponent } from './puentes-o-conectores/puentes-o-co
     PagesComponent,
     HomeComponent,
     ProductsComponent,
-    CategoriesComponent,
     AboutComponent,
     EnchufeOConectorComponent,
     PernosComponent,
@@ -41,7 +39,6 @@ import { PuentesOConectoresComponent } from './puentes-o-conectores/puentes-o-co
     PagesComponent,
     HomeComponent,
     ProductsComponent,
-    CategoriesComponent,
     AboutComponent,
   ]
 })

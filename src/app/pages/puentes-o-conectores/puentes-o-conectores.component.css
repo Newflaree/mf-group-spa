@@ -1,14 +1,23 @@
-.products {
-  height: 1000px;
-}
-
 .section-title h2::before {
   width: 310px;
 }
 
 @media ( max-width: 991px ) {
   .col-50 {
+    margin: 0;
+    padding: 0;
     width: 100%;
+  }
+
+  .grid-img img {
+    margin: 0;
+    padding: 0;
+  }
+
+  .img-content {
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
 }
 

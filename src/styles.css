@@ -54,7 +54,7 @@
 /*           Page Loader          */
 /*================================*/
 .page-loader {
-  position: fixed; 
+  position: fixed;
   left: 0;
   top: 0;
   height: 100%;
@@ -163,6 +163,10 @@ p {
   align-items: center;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .min-vh-100 {
   min-height: 100vh;
 }
@@ -206,7 +210,7 @@ section {
 }
 
 .opacity-0 {
-  
+
 }
 
 .openBox {
@@ -237,7 +241,7 @@ section {
 /*        Products Section       */
 /*===============================*/
 .products {
-  padding-top: 60px; 
+  padding-top: 60px;
   align-items: center;
   padding-bottom: 120px;
 }
@@ -279,5 +283,22 @@ section {
 /*        Products Section       */
 /*===============================*/
 
+/* Responsive Design */
+@media ( max-width: 991px ) {
+}
+
+@media ( max-width: 767px ) {
+  .section-title {
+    margin-bottom: 0;
+  }
+
+  .col-50 {
+    width: 100%;
+  }
+}
+
+@media ( max-width: 575px ) {
+}
+/* Responsive Design */
 
 /*-----------------------------------------------------------------------------------*/

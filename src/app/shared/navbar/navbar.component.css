@@ -187,6 +187,64 @@ header .nav-toggler.active span::after {
     display: block;
     position: fixed;
   }
+
+  header nav {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    width: 220px;
+    height: 174px;
+    right: 0;
+    top: 70px;
+  }
+
+  header nav ul {
+    background-color: var( --back-color );
+    box-shadow: 0 0 5px var( --bold-color );
+    width: 100%;
+  }
+
+  header nav ul li {
+    padding: 5px;
+    width: 100%;
+    border-bottom: 2px solid var( --main-color );
+  }
+
+  header nav ul li .itemProd {
+    color: var( --bold-color )!important;
+  }
+
+  .responsive-navbar nav ul li .itemProd i {
+    color: var( --main-color );
+  }
+
+  .responsive-navbar nav ul li.active {
+    border-bottom: 2px solid var( --main-color );
+  }
+
+  .responsive-navbar nav ul li .rpv-products-box {
+    position: static;
+  }
+
+  .responsive-navbar nav ul li .rpv-products-box ul {
+    margin: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .responsive-navbar nav ul li .rpv-products-box ul li {
+    margin: 0;
+    border: none;
+  }
+
+  .responsive-navbar nav ul li .rpv-products-box ul li a h5 {
+    color: var( --main-color );
+  }
+
+  .nav-item {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 @media ( max-width: 767px ) {

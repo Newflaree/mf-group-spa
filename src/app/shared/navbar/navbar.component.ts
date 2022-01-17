@@ -35,11 +35,11 @@ export class NavbarComponent implements OnInit {
   }
 
   showBox() {
-    let productBox: HTMLElement | null = document.querySelector( '.products-box' );
+    const productBox: HTMLElement | null = document.querySelector( '.products-box' );
     if ( !productBox ) {
       return;
     }
-    
+
     productBox.classList.toggle( 'hidden' );
   }
 
@@ -51,4 +51,20 @@ export class NavbarComponent implements OnInit {
     document.getElementById( 'contact' )?.scrollIntoView({ behavior:'smooth' });
   }
 
+  navToggler() {
+    const toggBtn: HTMLElement | null = document.querySelector( '.rspv-nav' );
+    if ( !toggBtn ){
+      return;
+    }
+
+    toggBtn.classList.toggle( 'hidden' )
+  }
+
+  showProds(){
+    const rpvProducts = document.querySelector( '.rpv-products-box' );
+    if ( !rpvProducts ) {
+      return;
+    }
+    rpvProducts.classList.toggle( 'hidden' );
+  }
 }

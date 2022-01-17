@@ -13,21 +13,21 @@
       <!-- Navbar -->
       <nav>
         <ul>
-          <li class='nav-item' 
+          <li class='nav-item'
               (click)='toHome()'
               routerLinkActive="active">
             <a routerLink="/home">
               Inicio
             </a>
           </li>
-          <li class='nav-item' 
+          <li class='nav-item'
               (click)='toAbout()'
               routerLinkActive="active">
             <a routerLink="/about">
               Quienes Somos
             </a>
           </li>
-          <li class='nav-item' 
+          <li class='nav-item'
               routerLinkActive="active">
             <a (click)='showBox()'>
               Productos <i class="fas fa-sort-down"></i>
@@ -37,7 +37,7 @@
             <div class='products-box hidden animate__animated animate__fadeIn animate__faster'>
               <ul *ngFor='let option of productOptions'>
                 <li>
-                  <a routerLinkActive="active" 
+                  <a routerLinkActive="active"
                      (click)='showBox()'
                      routerLink="{{ option.routerLink }}">
                     <h5>{{ option.nameOption }}</h5>
@@ -48,7 +48,7 @@
             <!-- Product Box -->
 
           </li>
-          <li class='nav-item' 
+          <li class='nav-item'
               (click)='toContact()'
               routerLinkActive="active">
             <a routerLink="/contact">
@@ -77,40 +77,44 @@
       <!-- Logo -->
 
       <!-- Toggle-Button -->
-      <button type='button' class='nav-toggler'>
+      <button type='button' class='nav-toggler' (click)='navToggler()'>
         <span></span>
       </button>
       <!-- Toggle-Button -->
 
       <!-- Navbar -->
-      <nav class='hidden'>
+      <nav class="rspv-nav hidden">
         <ul>
-          <li class='nav-item' 
+          <li class='nav-item'
               (click)='toHome()'
+              (click)='navToggler()'
               routerLinkActive="active">
             <a routerLink="/home">
               Inicio
             </a>
           </li>
-          <li class='nav-item' 
+          <li class='nav-item'
               (click)='toAbout()'
+              (click)='navToggler()'
               routerLinkActive="active">
             <a routerLink="/about">
               Quienes Somos
             </a>
           </li>
-          <li class='nav-item' 
+          <li class='nav-item'
+              (click)='showProds()'
               routerLinkActive="active">
-            <a (click)='showBox()'>
+            <a class='itemProd'>
               Productos <i class="fas fa-sort-down"></i>
             </a>
 
             <!-- Product Box -->
-            <div class='products-box hidden animate__animated animate__fadeIn animate__faster'>
+            <div class='rpv-products-box hidden'>
               <ul *ngFor='let option of productOptions'>
                 <li>
-                  <a routerLinkActive="active" 
+                  <a routerLinkActive="active"
                      (click)='showBox()'
+                     (click)='navToggler()'
                      routerLink="{{ option.routerLink }}">
                     <h5>{{ option.nameOption }}</h5>
                   </a>
@@ -120,8 +124,9 @@
             <!-- Product Box -->
 
           </li>
-          <li class='nav-item' 
+          <li class='nav-item'
               (click)='toContact()'
+              (click)='navToggler()'
               routerLinkActive="active">
             <a routerLink="/contact">
               Contacto

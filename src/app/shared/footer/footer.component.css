@@ -10,7 +10,7 @@ footer .container {
 }
 
 footer .social-icons {
-  padding: 20px 100px 20px;
+  text-align: center;
 }
 
 footer .social-item {
@@ -45,3 +45,13 @@ footer .social-item:hover i {
   transform: scale( 1.1 );
 }
 
+@media ( max-width: 991px ) {
+  footer {
+    height: 100%;
+    padding: 20px;
+  }
+  .social-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
