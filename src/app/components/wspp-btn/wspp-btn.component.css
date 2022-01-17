@@ -1,5 +1,3 @@
-.container {
-}
 .wspp-icon {
   position: fixed;
   bottom: 27px;
@@ -12,6 +10,7 @@
   color: var( --main-color );
   cursor: pointer;
   transition: all 0.3s ease;
+  z-index: 98;
 }
 
 .wspp-icon i:hover {

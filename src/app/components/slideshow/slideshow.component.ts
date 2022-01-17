@@ -29,6 +29,9 @@ export class SlideshowComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
+    setInterval( () => {
+      this.onNext();
+    }, 7000 )
   }
 
   onPrev() {
@@ -37,6 +40,4 @@ export class SlideshowComponent implements OnInit, AfterViewInit {
 
   onNext() {
     this.swiper.slideNext();
-  }
-
-}
+  } }

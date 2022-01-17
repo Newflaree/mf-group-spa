@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./wspp-btn.component.css']
 })
 export class WsppBtnComponent implements OnInit {
+  public urlWsp: string = 'https://api.whatsapp.com/send?phone=56998482497'
 
   constructor() { }
 

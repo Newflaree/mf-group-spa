@@ -6,10 +6,10 @@ header {
   padding: 14px;
   position: absolute;
   left: 0;
-  z-index: 99;
   height: 193px;
   width: 100%;
   border-bottom: 4px solid var( --bold-color );
+  z-index: 99;
 }
 
 header .brand-name {

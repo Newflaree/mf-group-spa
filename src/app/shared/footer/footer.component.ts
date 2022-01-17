@@ -11,13 +11,15 @@ export class FooterComponent implements OnInit {
       name: 'Correo electrónico',
       value: 'ventas@myfg.cl',
       icon: 'far fa-envelope',
-      position: 'left'
+      position: 'left',
+      href: 'mailto:ventas@myfg.cl'
     },
     {
       name: 'Whatsapp',
       value: '+56998482497',
       icon: 'fab fa-whatsapp',
-      position: 'right'
+      position: 'right',
+      href: 'https://api.whatsapp.com/send?phone=56998482497'
     },
   ]
 
