@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-
 // Interfaces
 import { SlideItem } from '../interfaces/slide-item';
 
