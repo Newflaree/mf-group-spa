@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-
 // Interfaces
 import { Product } from '../interfaces/product';
 
@@ -18,25 +17,25 @@ export class ProductsService {
       return element.id === id
     });
 
-    return {
+    const data: Product = {
       id: filtered[0].id,
       categ: filtered[0].categ,
       name: filtered[0].name,
       url: filtered[0].url,
-      desc: filtered[0].description,
+      description: filtered[0].description,
       espTech: filtered[0].espTech
     };
+
+    return data;
   }
 
   getProducts( categ: string ) {
-    const products = this.productsData.filter( ( element: Product ) => {
+    return this.productsData.filter( ( element: Product ) => {
       return element.categ === categ;
     });
-
-    return products;
   }
 
-  setItems() {
+  private setItems() {
     this.productsData = [
       // Enchufes o Conectores
       {

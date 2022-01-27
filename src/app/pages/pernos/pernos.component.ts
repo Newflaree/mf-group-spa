@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
 // Interfaces
 import { Product } from 'src/app/interfaces/product';
-
 // Services
 import { ProductsService } from 'src/app/services/products.service';
 
