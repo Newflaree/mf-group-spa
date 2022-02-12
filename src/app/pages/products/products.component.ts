@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-
+// Interfaces
+import { EstTech, Paragraph } from 'src/app/interfaces/product';
 // Services
-import {ProductsService} from 'src/app/services/products.service';
+import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
   selector: 'app-products',
@@ -11,7 +12,8 @@ import {ProductsService} from 'src/app/services/products.service';
 })
 export class ProductsComponent implements OnInit {
   public product: any;
-  public espTech: any; 
+  public espTech: EstTech[] = []; 
+  public description: Paragraph[] = []; 
 
   constructor( 
     private activatedRoute: ActivatedRoute,
@@ -25,6 +27,7 @@ export class ProductsComponent implements OnInit {
 
     this.product = product;
     this.espTech = product.espTech;
+    this.description = product.description;
   }
 
   onTopPage() {
