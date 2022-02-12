@@ -10,12 +10,12 @@
     <div class='row product-detail'>
       <div class='col-45'>
         <p class='img-content'>
-	  <img width="400px" src='{{ product.url }}'>
+	  <img src='{{ product.url }}'>
         </p>
       </div>
       <div class='col-55'>
 	<div class='desc'>
-	  <p *ngFor='let p of description'>
+	  <p class='desc-p' *ngFor='let p of description'>
             {{ p.p }}
           </p>
 	</div>
